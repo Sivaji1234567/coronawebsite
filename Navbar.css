@@ -1,0 +1,159 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: brown;
+}
+.sub1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    color:gold;
+    font-weight: 500;
+
+}
+.sub2{
+    margin-top: 10px;
+}
+.sub3{
+    margin-top: 4px;
+    width: 150px;
+   padding-left: 10px;
+    text-align: center;
+}
+.place{
+    width: 600px;
+}
+.btn{
+        background-color: brown;
+         color: white; 
+         font-size: 18px;
+        border-radius: 10px;
+        padding: 6px 6px;
+        border: 1px solid black; 
+}
+.gap{
+    margin-top: 2px;
+}
+/* .parent nav{
+    flex-direction: row;
+} */
+.profile-circle {
+    width: 40px; /* Size of the circle */
+    height: 40px; /* Size of the circle */
+    border-radius: 50%; /* Makes the circle */
+    background-color:white; /* Background color of the circle */
+    color: black; /* Text color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px; /* Font size of the letter */
+    font-weight: bold; /* Makes the letter bold */
+    text-transform: uppercase; /* Capitalizes the letter */
+    cursor: pointer;
+}
+.profile-circle:hover{
+    color: white;
+}
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu{
+    display: flex;
+    flex-direction: column;
+    width:200px;
+    height: 180px;
+    border-radius: 15px;
+    background-color:blue;
+   position:absolute;
+}
+.dropdown-content{
+    width:100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: sans-serif;
+    font-weight:bold ;
+}
+hr {
+    border: none;
+    border-top: 2px dotted black;
+    height: 2px;
+    width:100%;
+}
+.box{
+    width: 60%;
+    cursor: pointer;
+     height: 40px;
+     border-radius: 5px;
+     border: none;
+}
+/* Tablet screens (typically between 600px and 768px) */
+@media screen and (max-width: 800px) {
+    .navbar {
+        
+        background-color: darkbrown; 
+        width: 100%;/* Slightly darker for tablets */
+    }
+    .sub1 {
+        font-size: 30px; /* Smaller font size for tablets */
+    }
+    .sub2, .sub3 {
+        margin-top: 8px;
+    }
+    .place {
+        width: 80%; /* Adjust width to fit tablet screens */
+    }
+    .btn {
+        font-size: 16px; /* Smaller button font size */
+        padding: 5px 5px; /* Reduced padding */
+    }
+    .profile-circle {
+        width: 35px;
+        height: 35px;
+        font-size: 16px; /* Adjusted for smaller screens */
+    }
+    .dropdown-menu {
+        width: 180px; /* Slightly smaller dropdown width */
+        height: 160px; /* Slightly smaller dropdown height */
+    }
+    .box {
+        width: 70%; /* Wider to fill the screen better */
+    }
+}
+
+/* Phone screens (typically up to 600px) */
+@media screen and (max-width: 646px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        background-color: darkbrown;
+        width: 100%;
+    }
+    .sub1 {
+        font-size: 10px; /* Smaller font size for phones */
+        text-align: center; /* Centered text */
+    }
+    .sub2, .sub3 {
+        margin-top: 6px;
+    
+    }
+    .place {
+        width: 90%; /* Almost full width for small screens */
+    }
+    .btn {
+        font-size: 14px; /* Smaller button font size */
+        padding: 4px 4px; /* Further reduced padding */
+    }
+    .profile-circle {
+        width: 30px;
+        height: 30px;
+        font-size: 14px; /* Smaller font size */
+    }
+    .dropdown-menu {
+        width: 160px; /* Reduced dropdown width */
+        height: 140px; /* Reduced dropdown height */
+    }
+    .box {
+        width: 80%; /* Almost full width for small screens */
+    }
+}

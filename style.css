@@ -1,0 +1,38 @@
+.app-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .login-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 500px;
+    max-width: 100%;
+    background-image: linear-gradient(black ,green);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000; /* Ensure the popup is above other content */
+  }
+  
+  .popup-content {
+    position: relative;
+  }
+  
+  .close-button {
+    background: #ff5f5f;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  .by{
+    left:300px;
+    background-color:white;
+  }
+  

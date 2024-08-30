@@ -1,0 +1,126 @@
+
+.full{
+  display: flex;
+  flex-direction:column;
+ 
+}
+
+.half1{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 150px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.half1 div{
+  padding-bottom: 10px;
+}
+.half1 button{
+  width: 150px;
+  height: 50px;
+  margin-top: 15px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.half2{
+  margin-top: 20px;
+  background-color: lightblue;
+  color:black; 
+  display: flex;
+  width: 700px;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 450px;
+}
+link{
+  text-decoration: none;
+}
+.half2 p{
+  color: blue;
+}
+label{
+  color: black;
+  font-weight: bolder;
+}
+.report {
+  appearance: none; 
+  outline: none; 
+  cursor: pointer;
+  color: navy; 
+  background-color: lightblue;
+  border: 2px solid blue;
+
+  border-radius: 5px;  
+  padding: 5px 10px;
+  width: 300px;
+  height: 40px;
+  box-shadow: 5px 8px 5px rgba(0, 0, 0, 0.8);
+
+  font-family: serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+select:focus {
+  outline: 2px dashed red;  
+}
+/* Tablet screens (typically between 600px and 768px) */
+@media screen and (max-width: 768px) {
+    .full {
+        flex-direction: column;
+        align-items: center;
+    }
+    .half1 {
+        margin-top: 100px; /* Reduced margin for smaller screens */
+        padding: 0 20px; /* Added padding for better layout on smaller screens */
+    }
+    .half1 button {
+        width: 130px; /* Reduced button size */
+        height: 45px; /* Slightly reduced height */
+        font-size: 14px; /* Reduced font size */
+    }
+    .half2 {
+        width: 90%; /* Full width with margins on tablets */
+        margin-left: 0; /* Center alignment */
+        margin-top: 30px; /* Adjusted top margin */
+        padding: 20px; /* Added padding for better layout */
+    }
+    .report {
+        width: 90%; /* Full width on tablets */
+        height: 35px; /* Reduced height */
+        font-size: 14px; /* Reduced font size */
+    }
+}
+
+/* Phone screens (typically up to 600px) */
+@media screen and (max-width: 600px) {
+    .full {
+        flex-direction: column;
+        align-items: center;
+    }
+    .half1 {
+        margin-top: 80px; /* Further reduced margin for smaller screens */
+        padding: 0 15px; /* Increased padding */
+    }
+    .half1 button {
+        width: 120px; /* Further reduced button size */
+        height: 40px; /* Reduced height */
+        font-size: 12px; /* Smaller font size */
+    }
+    .half2 {
+        width: 100%; /* Full width */
+        margin-left: 0; /* Center alignment */
+        margin-top: 20px; /* Adjusted top margin */
+        padding: 15px; /* Increased padding */
+        background-color: lightyellow; /* Lighter background for phones */
+    }
+    .report {
+        width: 100%; /* Full width */
+        height: 30px; /* Reduced height */
+        font-size: 12px; /* Smaller font size */
+        box-shadow: 3px 6px 3px rgba(0, 0, 0, 0.5); /* Lighter shadow */
+    }
+}
+
