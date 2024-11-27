@@ -22,7 +22,7 @@ def get_db_connection():
     return pymysql.connect(
         host='localhost',
         user='root',
-        password='Nueve@123',
+        password='passowrd',
         db='covid',
         charset='utf8mb4',
         cursorclass=pymysql.cursors.DictCursor
@@ -156,11 +156,11 @@ class SendEmail(BaseHandler):
             self.write("EMAIL SENDING")
             port = 465 
             smtp_server = "smtp.gmail.com"
-            sender_email = "thomas.webeqt@gmail.com" 
+            sender_email = "senderemail" 
             global receiver_email
             receiver_email=email
             otpstore[receiver_email]=otp
-            password = "ulumouifaftzlhef"
+            password = "senderpassword"
             message = """\
             Subject: Hi there
 
